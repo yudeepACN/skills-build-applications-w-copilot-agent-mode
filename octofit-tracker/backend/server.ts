@@ -7,9 +7,9 @@ import('./src/index').catch((error) => {
   process.exit(1);
 });
 
-const codespaceName = process.env.CODESPACE_NAME;
-const baseUrl = codespaceName
-  ? `https://${codespaceName}-8000.app.github.dev`
+const CODESPACE_NAME = process.env.CODESPACE_NAME;
+const baseUrl = CODESPACE_NAME
+  ? `https://${CODESPACE_NAME}-8000.app.github.dev`
   : 'http://localhost:8000';
 
-export { baseUrl, codespaceName };
+export { baseUrl, CODESPACE_NAME };
