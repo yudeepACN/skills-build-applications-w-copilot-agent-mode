@@ -5,8 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "dev": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' src/index.ts",
-    "start": "node dist/index.js"
+    "dev": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' server.ts",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
